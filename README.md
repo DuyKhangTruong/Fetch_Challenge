@@ -24,7 +24,7 @@ When the user selects a meal, they should be taken to a detailed view that inclu
 </p>
 
 ## GIF
-![](https://github.com/DuyKhangTruong/Fetch_Mealdb/blob/main/demo.gif)
+![](https://github.com/DuyKhangTruong/Fetch_Challenge/blob/main/demo.gif)
 
 ## Technology
 - iOS 14 and above
