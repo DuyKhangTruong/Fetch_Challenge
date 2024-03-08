@@ -9,7 +9,6 @@ The user should be shown the list of meals in the Dessert category, **sorted alp
 
 When the user selects a meal, they should be taken to a detailed view that includes:
 - Meal name
-- Origin (added feature)
 - Hide or display tags if meal does have (added feature)
 - Instructions
 - Ingredients/measurements
