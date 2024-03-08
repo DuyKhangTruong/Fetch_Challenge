@@ -9,6 +9,7 @@ import Foundation
 
 
 struct Ingredient: Decodable {
+    var id = UUID()
     let name: String
     let measure: String
 }

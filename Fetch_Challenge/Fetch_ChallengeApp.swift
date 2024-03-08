@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct Fetch_ChallengeApp: App {
+    @StateObject var mealsVM = MealsViewModel()
     var body: some Scene {
         WindowGroup {
             HomeView()
+                .environmentObject(mealsVM)
         }
     }
 }

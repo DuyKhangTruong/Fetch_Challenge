@@ -14,7 +14,7 @@ struct Services {
         let (data,_) = try await URLSession.shared.data(from: url)
         let response = try JSONDecoder().decode(MealJSONResponse.self, from: data)
     
-        return response.array
+        return response.array.sorted(by: {$0.mealName < $1.mealName})
     }
     
     static func fetchRecipe(for meal: Meal) async throws -> Recipe? {

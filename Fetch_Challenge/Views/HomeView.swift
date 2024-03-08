@@ -7,9 +7,9 @@
 
 import SwiftUI
 
+
 struct HomeView: View {
-    @StateObject var mealsVM = MealsViewModel()
-    
+    @EnvironmentObject var mealsVM: MealsViewModel
     var body: some View {
         NavigationStack {
             ZStack {
@@ -28,7 +28,7 @@ struct HomeView: View {
     
     var listView: some View {
         List(mealsVM.meals, id: \.id) { meal in
-            NavigationLink(destination: RecipeView()) {
+            NavigationLink(destination: RecipeView(meal: meal)) {
                 ThumbnailRow(imgURL: meal.imgURLString, title: meal.mealName)
             }
         }

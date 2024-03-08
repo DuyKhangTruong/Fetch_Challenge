@@ -14,28 +14,28 @@ class MealsViewModel: ObservableObject {
     @Published var meals = [Meal]()
     @Published var recipe: Recipe? = nil
     
-    var isLoadingMeal = false
-    var isLoadingRecipe = false
+    @Published var isLoadingMeal = false
+    @Published var isLoadingRecipe = false
     
     func fetchMeals(for category: String) async {
         isLoadingMeal.toggle()
         do {
             meals = try await Services.fetchMeals(for: category)
-            isLoadingMeal.toggle()
+            
         } catch {
             print(error.localizedDescription)
-            isLoadingMeal.toggle()
         }
+        
+        isLoadingMeal.toggle()
     }
     
     func fetchRecipe(for meal: Meal) async {
         isLoadingRecipe.toggle()
         do {
             recipe = try await Services.fetchRecipe(for: meal)
-            isLoadingRecipe.toggle()
         } catch {
             print(error.localizedDescription)
-            isLoadingRecipe.toggle()
         }
+        isLoadingRecipe.toggle()
     }
 }
