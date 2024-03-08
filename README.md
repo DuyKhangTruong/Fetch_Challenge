@@ -26,6 +26,6 @@ When the user selects a meal, they should be taken to a detailed view that inclu
 ![](https://github.com/DuyKhangTruong/Fetch_Challenge/blob/main/demo.gif)
 
 ## Technology
-- iOS 14 and above
+- iOS 15 and above
 - SwiftUI
 - KingFisher
