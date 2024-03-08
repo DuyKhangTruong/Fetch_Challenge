@@ -1,4 +1,4 @@
-# Fetch_Mealdb
+# Fetch_Challenge
 The app uses SwiftUI, MVVM application architecture, and [The Meal DB public API](https://www.themealdb.com/). The app utilizes the following 2 endpoints: 
 - https://themealdb.com/api/json/v1/1/filter.php?c=Dessert for fetching the list of meals in the Dessert category
 - https://themealdb.com/api/json/v1/1/lookup.php?i=MEAL_ID for fetching the meal details by its
